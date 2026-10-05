@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Example App</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <div class="container home">
+        <!-- Hero Beranda -->
+        <section class="hero text-center">
+            <p class="hero-greeting">Selamat datang di</p>
+            <h1>Beranda Portofolio</h1>
+            <p>
+                Ini adalah halaman utama. Situs sederhana ini berisi portofolio pribadi:
+                profil, pengalaman, hobi, lagu favorit, video karya, dan tautan media sosial.
+            </p>
+            <a class="btn" href="{{ route('portfolio') }}">Lihat Portfolio</a>
+        </section>
+
+        <footer>
+            &copy; 2026 Portofolio Pribadi. Semua hak dilindungi.
+        </footer>
+    </div>
+@endsection
