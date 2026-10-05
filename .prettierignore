@@ -1,0 +1,9 @@
+vendor/
+storage/
+bootstrap/cache/
+public/storage/
+public/build/
+node_modules/
+.git/
+*.min.css
+*.min.js
